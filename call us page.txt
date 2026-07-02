@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Call Customer Support</title>
+  <meta name="description" content="Call our customer support team directly. Click the button to connect instantly."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 50px 40px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .icon-wrapper {
+      width: 90px;
+      height: 90px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      font-size: 38px;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4); }
+      50% { box-shadow: 0 10px 50px rgba(102, 126, 234, 0.7); }
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 15px;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+    .number-display {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 14px;
+      padding: 18px 24px;
+      margin-bottom: 28px;
+    }
+    .number-label {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
+    }
+    .phone-number {
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .call-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 18px 40px;
+      border-radius: 50px;
+      width: 100%;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      letter-spacing: 0.3px;
+    }
+    .call-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(102, 126, 234, 0.6);
+      background: linear-gradient(135deg, #764ba2, #667eea);
+    }
+    .call-btn:active {
+      transform: translateY(0px);
+    }
+    .call-btn span {
+      font-size: 22px;
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .divider span {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .hours {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+    .hours strong {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(72, 199, 142, 0.15);
+      border: 1px solid rgba(72, 199, 142, 0.3);
+      color: #48c78e;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+    }
+    .badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background: #48c78e;
+      border-radius: 50%;
+      animation: blink 1.5s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon-wrapper">📞</div>
+    <div class="badge">Agents Available Now</div>
+    <h1>Talk to Our Team</h1>
+    <p class="subtitle">Our customer support agents are ready to help you. Click below to call us instantly.</p>
+    <div class="number-display">
+      <div class="number-label">Support Line</div>
+      <div class="phone-number">+1 (380) 777-5778</div>
+    </div>
+    <a href="tel:+13807775778" class="call-btn">
+      <span>📞</span> Call Now
+    </a>
+    <div class="divider"><span>availability</span></div>
+    <div class="hours">
+      <strong>Monday – Friday</strong><br/>
+      9:00 AM – 6:00 PM (EST)<br/><br/>
+      <strong>Saturday</strong><br/>
+      10:00 AM – 2:00 PM (EST)
+    </div>
+  </div>
+</body>
+</html>
